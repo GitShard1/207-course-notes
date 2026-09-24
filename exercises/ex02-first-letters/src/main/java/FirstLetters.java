@@ -26,6 +26,27 @@ public class FirstLetters {
      */
     public static String firstLetters(String words) {
         // TODO: complete
-        return "";
+
+//        String d = "wow oh no";
+//        String[] m = d.split(" ");
+//        for (int i = 0; i < m.length; i +=1) {
+//            System.out.println(m[i]);
+//        }
+
+        String[] splitted = words.split(" ");
+        System.out.println(splitted);
+        // Initialize the builder
+        StringBuilder finale = new StringBuilder("");
+
+        for (int i = 0; i < splitted.length; i +=1) {
+            // System.out.println(splitted[i]);
+            // System.out.println(splitted[i].substring(0,1));
+            finale.append(splitted[i].charAt(0));
+        }
+//        for (String s : splitted) {
+//            finale.append(s[0]);
+//        }
+
+        return finale.toString();
     }
 }
